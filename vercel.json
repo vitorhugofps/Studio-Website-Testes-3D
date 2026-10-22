@@ -38,7 +38,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/kimi",
+      "destination": "/soda",
       "permanent": false
     }
   ]

@@ -5,6 +5,7 @@ Cada teste vive na sua própria pasta e é servido em `/<pasta>`.
 | Pasta | Teste |
 |---|---|
 | `kimi/` | Kimi Antonelli — GRIDO1 Racing Systems (three.js + Lenis, arquivo único) |
+| `soda/` | Soda — Diet Soda “Pure Zero” (model-viewer + GSAP, arquivo único) |
 
 A raiz redireciona para o teste mais recente (`vercel.json`).
 
@@ -12,3 +13,6 @@ Os assets do `kimi/` passam pelo próprio domínio através do rewrite em `verce
 (`/assets/kimi-04a9449ab2/*` → `storage.getlayers.ai`), então texturas, o modelo do
 capacete e as máscaras CSS carregam sem depender dos cabeçalhos CORS do bucket.
 Aberto direto do disco, o `index.html` fica sem assets — use a URL da Vercel.
+
+O `soda/` carrega os assets direto de `api.getlayers.ai` (o bucket responde com CORS
+liberado), então funciona tanto na Vercel quanto aberto do disco, com internet.
